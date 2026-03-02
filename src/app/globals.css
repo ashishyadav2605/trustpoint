@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+/* Font Family Classes */
+.font-sans {
+  font-family: var(--font-inter);
+}
+
+.font-serif {
+  font-family: var(--font-playfair);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2d2d;
+}
+
+/* Selection */
+::selection {
+  background-color: #3D5A7F;
+  color: #ffffff;
+}
+
+/* Navbar override */
+nav {
+  background-color: #3D5A7F !important;
+  opacity: 1 !important;
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid #121212;
+  outline-offset: 2px;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Ensure navbar is fully opaque */
+nav {
+  background-color: #a3b6ce !important;
+  opacity: 1 !important;
+}

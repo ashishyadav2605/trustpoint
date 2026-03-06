@@ -129,6 +129,47 @@ export default function WhyChooseUsPage() {
         </div>
       </section>
 
+      {/* For Employers & Candidates Section */}
+      <section className="py-16 md:py-24 bg-trustWhite">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* For Employers */}
+            <FadeIn delay={0.1}>
+              <div className="bg-gradient-to-br from-trustNavy to-trustBlue p-8 md:p-10 rounded-2xl text-white">
+                <p className="text-white/80 text-sm uppercase tracking-widest mb-2">For Employers</p>
+                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                  Build a workforce that delivers results.
+                </h3>
+                <p className="text-white/90 text-lg mb-6 leading-relaxed">
+                  Our structured recruitment process ensures faster hiring, reduced attrition and access to dependable talent.
+                </p>
+                <Button href="/contact" className="bg-white text-trustNavy hover:bg-trustLightGrey">
+                  Request Talent
+                  <ArrowRight className="ml-2" size={18} />
+                </Button>
+              </div>
+            </FadeIn>
+
+            {/* For Candidates */}
+            <FadeIn delay={0.2}>
+              <div className="bg-gradient-to-br from-trustTeal to-trustBlue p-8 md:p-10 rounded-2xl text-white">
+                <p className="text-white/80 text-sm uppercase tracking-widest mb-2">For Candidates</p>
+                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                  Your career matters.
+                </h3>
+                <p className="text-white/90 text-lg mb-6 leading-relaxed">
+                  We connect you with trusted employers and opportunities that align with your skills and aspirations.
+                </p>
+                <Button href="/contact" className="bg-white text-trustTeal hover:bg-trustLightGrey">
+                  Apply Now
+                  <ArrowRight className="ml-2" size={18} />
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial Section */}
       <section className="py-16 md:py-24 text-trustWhite" style={{ background: 'linear-gradient(135deg, #3D5A7F 0%, #5A7091 50%, #6B82A0 100%)' }}>
         <div className="container mx-auto px-4 md:px-6 lg:px-8">

@@ -65,27 +65,85 @@ export const WHY_CHOOSE_US_DATA: WhyChooseUsItem[] = [
 export const VALUES_DATA: ValueItem[] = [
   {
     id: 1,
-    title: "Integrity",
-    description: "We operate with complete transparency and honesty in every interaction. Trust is the foundation of our relationships with clients and candidates alike.",
+    title: "Integrity First",
+    description: "We operate with honesty, transparency and ethical practices in every interaction with clients, candidates and partners.",
     icon: "Shield"
   },
   {
     id: 2,
-    title: "Excellence",
-    description: "We pursue the highest standards in everything we do. From candidate sourcing to client service, excellence is not negotiable.",
-    icon: "Star"
+    title: "Trust & Accountability",
+    description: "We build long-term relationships through reliability, clear communication and delivering timely on commitments.",
+    icon: "Handshake"
   },
   {
     id: 3,
-    title: "Reliability",
-    description: "When we make a commitment, we deliver. Our clients and candidates can depend on us to follow through, every single time.",
-    icon: "CheckCircle"
+    title: "Client-Centric Approach",
+    description: "We understand our clients' business needs and provide customized workforce solutions that drive growth.",
+    icon: "Heart"
   },
   {
     id: 4,
-    title: "Innovation",
-    description: "We continuously evolve our methods and embrace new technologies to provide cutting-edge staffing solutions for the modern workplace.",
+    title: "Talent Excellence",
+    description: "We are committed to identifying, nurturing and placing high-quality talent that aligns with organizational goals.",
+    icon: "Star"
+  },
+  {
+    id: 5,
+    title: "Respect for People",
+    description: "We treat every candidate and client with dignity, fairness and professionalism.",
+    icon: "Users"
+  },
+  {
+    id: 6,
+    title: "Continuous Improvement thru Innovation",
+    description: "We embrace innovation, technology and industry best practices to enhance recruitment outcomes.",
     icon: "Lightbulb"
+  },
+  {
+    id: 7,
+    title: "Partnership Mindset",
+    description: "We act as strategic partners, not just service providers, supporting long-term workforce success.",
+    icon: "Link"
+  }
+];
+
+export const INDUSTRIES_DATA = [
+  "Logistics & Supply Chain",
+  "Warehousing",
+  "Retail & E-Commerce",
+  "Manufacturing & Production",
+  "Hospitality & Healthcare",
+  "Agriculture & Food Processing",
+  "Construction & Infrastructure",
+  "IT & Technology",
+  "Telecom & BPO"
+];
+
+export const RECRUITMENT_PROCESS = [
+  {
+    step: 1,
+    title: "Requirement Analysis",
+    description: "Understanding your specific needs, company culture, and hiring goals."
+  },
+  {
+    step: 2,
+    title: "Talent Sourcing & Screening",
+    description: "Leveraging extensive networks and advanced tools to identify top candidates."
+  },
+  {
+    step: 3,
+    title: "Skill & Background Verification",
+    description: "Rigorous vetting ensures only qualified professionals are presented."
+  },
+  {
+    step: 4,
+    title: "Client Coordination",
+    description: "Facilitating interviews and aligning expectations between all parties."
+  },
+  {
+    step: 5,
+    title: "Deployment & Support",
+    description: "Seamless onboarding and ongoing support for lasting success."
   }
 ];
 
@@ -93,13 +151,30 @@ export const CONTACT_INFO: ContactInfo = {
   phone: "+91 9911005312",
   email: "pradeep.trustpoint@gmail.com",
   whatsapp: "9911005312",
-  address: "123 Business District, Suite 456, New York, NY 10001"
+  address: "India"
 };
 
 export const COMPANY_INFO = {
   name: "TrustPoint",
   tagline: "Connecting Potential with Performance",
-  description: "TrustPoint is a premier manpower solutions provider dedicated to bridging the gap between exceptional talent and outstanding opportunities. Founded on the principles of integrity, reliability, and excellence, we have been transforming the staffing landscape for over a decade.",
-  mission: "To empower organizations with the right talent and help professionals find careers that match their potential, creating lasting partnerships built on trust and mutual success.",
-  vision: "To be the most trusted name in staffing solutions, known for our commitment to quality, innovation, and the positive impact we create for businesses and individuals alike."
+  description: "We are a professional staffing and workforce solutions company delivering reliable, scalable and industry-focused talent solutions across India. We help organizations hire right, grow faster and build future-ready teams.",
+  aboutParagraph1: "We are a professional staffing and workforce solutions company delivering reliable, scalable and industry-focused talent solutions across India. We help organizations hire right, grow faster and build future-ready teams.",
+  aboutParagraph2: "We believe people are the foundation of every successful business. Our approach combines deep industry knowledge, ethical recruitment practices and a commitment to long-term partnerships.",
+  aboutParagraph3: "From frontline workforce to specialized professionals, we connect the right talent with the right opportunity—efficiently and responsibly.",
+  mission: "To provide efficient, flexible and quality manpower that meet the unique needs of our clients, fostering their growth & productivity. To bridge the gap between industry requirements and workforce capabilities through targeted skill development and talent deployment. To leverage AI and technology to enhance efficiency, accuracy and fairness in human resources recruitment and skill development.",
+  vision: "To become a trusted leader in workforce solutions, connecting businesses with skilled, market-ready talent while transforming workforce potential to increase employability and supporting industry growth.",
+  forEmployers: {
+    title: "For Employers",
+    tagline: "Build a workforce that delivers results.",
+    description: "Our structured recruitment process ensures faster hiring, reduced attrition and access to dependable talent.",
+    cta: "Request Talent"
+  },
+  forCandidates: {
+    title: "For Candidates",
+    tagline: "Your career matters.",
+    description: "We connect you with trusted employers and opportunities that align with your skills and aspirations.",
+    cta: "Apply Now"
+  },
+  contactTagline: "Partner With Trustpoint",
+  contactDescription: "Whether you are scaling operations, entering new markets, or optimizing workforce costs—Trustpoint delivers staffing solutions you can rely on."
 };

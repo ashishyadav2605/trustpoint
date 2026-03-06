@@ -11,8 +11,8 @@ export default function ContactPage() {
     <>
       <PageHeader
         subtitle="Contact Us"
-        title="Let's Start a Conversation"
-        description="Whether you're looking to hire top talent or exploring career opportunities, we're here to help."
+        title="Partner With Trustpoint"
+        description="Whether you are scaling operations, entering new markets, or optimizing workforce costs—Trustpoint delivers staffing solutions you can rely on."
       />
 
       {/* Contact Section */}

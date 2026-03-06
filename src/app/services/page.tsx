@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { PageHeader, ServiceCard, Button } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { SERVICES_DATA } from '@/data/content';
+import { SERVICES_DATA, INDUSTRIES_DATA } from '@/data/content';
 
 export default function ServicesPage() {
   return (
@@ -225,17 +225,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            {[
-              'Logistics & Supply Chain',
-              'Warehousing',
-              'Retail & E-Commerce',
-              'Manufacturing & Production',
-              'Hospitality & Healthcare',
-              'Agriculture & Food Processing',
-              'Construction & Infrastructure',
-              'IT & Technology',
-              'Telecom & BPO'
-            ].map((industry, index) => (
+            {INDUSTRIES_DATA.map((industry, index) => (
               <FadeIn key={industry} delay={index * 0.05}>
                 <span className="inline-block px-6 py-3 bg-trustWhite text-trustNavy border border-trustBlue/20 rounded-full text-sm md:text-base hover:bg-trustBlue hover:text-trustWhite hover:border-trustBlue transition-colors duration-300 cursor-default shadow-sm">
                   {industry}

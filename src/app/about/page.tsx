@@ -31,16 +31,13 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-trustGrey text-lg leading-relaxed">
                   <p>
-                    {COMPANY_INFO.description}
+                    {COMPANY_INFO.aboutParagraph1}
                   </p>
                   <p>
-                    Founded on the principles of integrity, reliability, and excellence, we have been transforming 
-                    the staffing landscape for over a decade. Our team of dedicated professionals works tirelessly 
-                    to understand your unique needs and deliver solutions that exceed expectations.
+                    {COMPANY_INFO.aboutParagraph2}
                   </p>
                   <p>
-                    At TrustPoint, we believe that the right talent can transform organizations. That&apos;s why we go 
-                    beyond traditional recruitment to build lasting partnerships with our clients and candidates alike.
+                    {COMPANY_INFO.aboutParagraph3}
                   </p>
                 </div>
               </div>

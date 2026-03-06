@@ -10,7 +10,6 @@ export default function WhyChooseUsPage() {
   return (
     <>
       <PageHeader
-        subtitle="Why Choose Us"
         title="The TrustPoint Difference"
         description="Discover why leading organizations trust us with their most critical hiring decisions."
       />
@@ -69,59 +68,6 @@ export default function WhyChooseUsPage() {
                       ))}
                     </ul>
                   </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Benefits */}
-      <section className="py-16 md:py-24 bg-trustLightGrey">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <FadeIn>
-            <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-trustBlack mb-6">
-                More Reasons to Partner With Us
-              </h2>
-            </div>
-          </FadeIn>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Flexible Engagement',
-                description: 'Choose from contingency, retained, or RPO models based on your needs and budget.'
-              },
-              {
-                title: 'Transparent Pricing',
-                description: 'Clear, competitive fee structures with no hidden costs or surprises.'
-              },
-              {
-                title: 'Guarantee Period',
-                description: 'All placements come with a replacement guarantee for your peace of mind.'
-              },
-              {
-                title: 'Technology-Enabled',
-                description: 'Advanced ATS and AI tools to enhance candidate matching and tracking.'
-              },
-              {
-                title: 'Compliance Assured',
-                description: 'Full adherence to employment laws and industry regulations.'
-              },
-              {
-                title: 'Scalable Solutions',
-                description: 'From single hires to large-scale recruitment drives, we scale with you.'
-              }
-            ].map((item, index) => (
-              <FadeIn key={item.title} delay={index * 0.1}>
-                <div className="bg-trustWhite p-6 md:p-8 rounded-lg">
-                  <h3 className="font-serif text-xl font-bold text-trustBlack mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-trustGrey leading-relaxed">
-                    {item.description}
-                  </p>
                 </div>
               </FadeIn>
             ))}

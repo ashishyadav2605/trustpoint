@@ -1,11 +1,49 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { PageHeader, ServiceCard, Button } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
-import { SERVICES_DATA, INDUSTRIES_DATA } from '@/data/content';
+import { SERVICES_DATA } from '@/data/content';
+
+const INDUSTRIES_WITH_IMAGES = [
+  {
+    name: "Logistics & Supply Chain",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "Warehousing",
+    image: "https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "Retail & E-Commerce",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "Manufacturing & Production",
+    image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "Hospitality & Healthcare",
+    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "Agriculture & Food Processing",
+    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "Construction & Infrastructure",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "IT & Technology",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    name: "Telecom & BPO",
+    image: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  }
+];
 
 export default function ServicesPage() {
   return (
@@ -42,9 +80,6 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-              <p className="text-trustBlue text-sm uppercase tracking-widest mb-4">
-                What We Offer
-              </p>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-trustBlack mb-6">
                 Services We Offer
               </h2>
@@ -65,16 +100,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Recruitment Process Section */}
       <section className="py-16 md:py-24 bg-trustWhite">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-              <p className="text-trustBlue text-sm uppercase tracking-widest mb-4">
-                Our Process
-              </p>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-trustBlack mb-6">
-                Our Recruitment Process
+                Recruitment Process
               </h2>
               <p className="text-trustGrey text-lg">
                 A streamlined approach that delivers results while keeping you informed every step of the way.
@@ -160,9 +192,6 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-              <p className="text-trustTeal text-sm uppercase tracking-widest mb-4">
-                Sectors We Specialize In
-              </p>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-trustBlack mb-6">
                 Industries We Serve
               </h2>
@@ -172,96 +201,26 @@ export default function ServicesPage() {
             </div>
           </FadeIn>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-            <FadeIn>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            {INDUSTRIES_WITH_IMAGES.map((industry, index) => (
+              <FadeIn key={industry.name} delay={index * 0.05}>
+                <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group cursor-pointer">
                   <Image
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                    alt="Technology industry"
+                    src={industry.image}
+                    alt={industry.name}
                     fill
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-trustNavy/90 via-trustNavy/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                    <h3 className="font-serif text-white text-sm md:text-lg lg:text-xl font-bold">
+                      {industry.name}
+                    </h3>
+                  </div>
                 </div>
-                <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg">
-                  <Image
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                    alt="Healthcare industry"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg">
-                  <Image
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                    alt="Finance industry"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg">
-                  <Image
-                    src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                    alt="Manufacturing industry"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              </div>
-            </FadeIn>
-            <FadeIn delay={0.2}>
-              <div>
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-trustBlack mb-6">
-                  Expertise Across Sectors
-                </h3>
-                <p className="text-trustGrey text-lg mb-6">
-                  Whether you&apos;re in technology, healthcare, finance, or any other industry, our specialized recruiters understand your unique challenges and requirements.
-                </p>
-                <p className="text-trustGrey text-lg">
-                  We don&apos;t just fill positions—we find candidates who understand your industry&apos;s nuances and can contribute from day one.
-                </p>
-              </div>
-            </FadeIn>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {INDUSTRIES_DATA.map((industry, index) => (
-              <FadeIn key={industry} delay={index * 0.05}>
-                <span className="inline-block px-6 py-3 bg-trustWhite text-trustNavy border border-trustBlue/20 rounded-full text-sm md:text-base hover:bg-trustBlue hover:text-trustWhite hover:border-trustBlue transition-colors duration-300 cursor-default shadow-sm">
-                  {industry}
-                </span>
               </FadeIn>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Why Choose TrustPoint Summary */}
-      <section className="py-16 md:py-20 bg-trustWhite">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <FadeIn>
-            <div className="max-w-4xl mx-auto">
-              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-trustBlack mb-8 text-center">
-                Why Choose TrustPoint?
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                {[
-                  'Industry-focused recruitment expertise',
-                  'Quality-driven screening process',
-                  'Pan-India talent reach',
-                  'Ethical & compliant hiring practices',
-                  'Long-term partnership mindset'
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center gap-3 p-4 bg-trustLightGrey rounded-lg">
-                    <svg className="w-6 h-6 text-trustTeal flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-trustBlack font-medium">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
         </div>
       </section>
 

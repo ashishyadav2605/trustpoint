@@ -61,8 +61,8 @@ export default function HomePage() {
               >
                 <div className="w-80 h-96 lg:w-96 lg:h-[28rem] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Professional woman at work"
+                    src="https://media.istockphoto.com/id/468841284/photo/a-group-of-four-businesspeople-talking-at-a-table.jpg?s=612x612&w=0&k=20&c=r85vEdXockoHdtHT5TquqAWo4hJhG6ohzbD2EzAuHF8="
+                    alt="TrustPoint team collaboration"
                     fill
                     className="object-cover"
                     priority
@@ -176,10 +176,10 @@ export default function HomePage() {
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-              'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+              'https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+              'https://images.unsplash.com/photo-1573497019236-17f8177b81e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
               'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-              'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+              'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
             ].map((src, index) => (
               <FadeIn key={index} delay={index * 0.1}>
                 <div className="relative aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">

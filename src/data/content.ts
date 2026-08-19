@@ -148,10 +148,10 @@ export const RECRUITMENT_PROCESS = [
 ];
 
 export const CONTACT_INFO: ContactInfo = {
-  phone: "+91 9911005312",
-  email: "pradeep.trustpoint@gmail.com",
-  whatsapp: "9911005312",
-  address: "India"
+  phone: "+91 9818690924",
+  email: "trustpointstaffing@gmail.com",
+  whatsapp: "9818690924",
+  address: "Plot no 86, Sector 10, Gurgaon, Haryana -122001"
 };
 
 export const COMPANY_INFO = {

@@ -5,6 +5,10 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 import { PageHeader, Button } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { WHY_CHOOSE_US_DATA } from '@/data/content';
+import firstImg from './first.jpg';
+import secondImg from './second.webp';
+import fourthImg from './fourth.jpg';
+import fifthImg from './fifth.webp';
 
 export default function WhyChooseUsPage() {
   return (
@@ -15,7 +19,7 @@ export default function WhyChooseUsPage() {
       />
 
       {/* Alternating Sections */}
-      <section className="py-16 md:py-24 bg-trustWhite">
+      <section className="pt-16 md:pt-24 pb-12 md:pb-16 bg-trustWhite">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="space-y-16 md:space-y-24">
             {WHY_CHOOSE_US_DATA.map((item, index) => (
@@ -29,14 +33,14 @@ export default function WhyChooseUsPage() {
                   }`}>
                     <Image
                       src={index === 0 
-                        ? 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+                        ? firstImg
                         : index === 1
-                        ? 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+                        ? secondImg
                         : index === 2
                         ? 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
                         : index === 3
-                        ? 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-                        : 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+                        ? fourthImg
+                        : fifthImg
                       }
                       alt={item.heading}
                       fill
@@ -75,70 +79,8 @@ export default function WhyChooseUsPage() {
         </div>
       </section>
 
-      {/* For Employers & Candidates Section */}
-      <section className="py-16 md:py-24 bg-trustWhite">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* For Employers */}
-            <FadeIn delay={0.1}>
-              <div className="bg-gradient-to-br from-trustNavy to-trustBlue p-8 md:p-10 rounded-2xl text-white">
-                <p className="text-white/80 text-sm uppercase tracking-widest mb-2">For Employers</p>
-                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
-                  Build a workforce that delivers results.
-                </h3>
-                <p className="text-white/90 text-lg mb-6 leading-relaxed">
-                  Our structured recruitment process ensures faster hiring, reduced attrition and access to dependable talent.
-                </p>
-                <Button href="/contact" className="bg-white text-trustNavy hover:bg-trustLightGrey">
-                  Request Talent
-                  <ArrowRight className="ml-2" size={18} />
-                </Button>
-              </div>
-            </FadeIn>
-
-            {/* For Candidates */}
-            <FadeIn delay={0.2}>
-              <div className="bg-gradient-to-br from-trustTeal to-trustBlue p-8 md:p-10 rounded-2xl text-white">
-                <p className="text-white/80 text-sm uppercase tracking-widest mb-2">For Candidates</p>
-                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
-                  Your career matters.
-                </h3>
-                <p className="text-white/90 text-lg mb-6 leading-relaxed">
-                  We connect you with trusted employers and opportunities that align with your skills and aspirations.
-                </p>
-                <Button href="/contact" className="bg-white text-trustTeal hover:bg-trustLightGrey">
-                  Apply Now
-                  <ArrowRight className="ml-2" size={18} />
-                </Button>
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-16 md:py-24 text-trustWhite" style={{ background: 'linear-gradient(135deg, #3D5A7F 0%, #5A7091 50%, #6B82A0 100%)' }}>
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <FadeIn>
-            <div className="max-w-4xl mx-auto text-center">
-              <svg className="w-12 h-12 mx-auto mb-8 text-white/50" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium mb-8 leading-relaxed">
-                TrustPoint transformed our hiring process. Their understanding of our industry and culture 
-                meant we received candidates who were not just qualified, but truly fit our team.
-              </blockquote>
-              <div>
-                <p className="font-semibold text-lg">Sarah Mitchell</p>
-                <p className="text-white/70">VP of Human Resources, TechCorp Industries</p>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-trustWhite">
+      <section className="pt-8 md:pt-12 pb-16 md:pb-24 bg-trustWhite">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-trustBlack mb-6">

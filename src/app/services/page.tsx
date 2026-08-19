@@ -5,31 +5,32 @@ import { ArrowRight } from 'lucide-react';
 import { PageHeader, ServiceCard, Button } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
 import { SERVICES_DATA } from '@/data/content';
+import retailAndEcommerceImg from './retailandecommerce.webp';
 
 const INDUSTRIES_WITH_IMAGES = [
   {
     name: "Logistics & Supply Chain",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     name: "Warehousing",
-    image: "https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     name: "Retail & E-Commerce",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: retailAndEcommerceImg
   },
   {
     name: "Manufacturing & Production",
-    image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     name: "Hospitality & Healthcare",
-    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     name: "Agriculture & Food Processing",
-    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     name: "Construction & Infrastructure",
@@ -37,11 +38,11 @@ const INDUSTRIES_WITH_IMAGES = [
   },
   {
     name: "IT & Technology",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     name: "Telecom & BPO",
-    image: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   }
 ];
 
@@ -59,16 +60,24 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+              src="https://thearchitectsdiary.com/wp-content/uploads/2024/11/office-interiors-31-1024x683.jpg"
               alt="Modern office workspace"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-trustNavy/80 to-transparent flex items-center">
-              <div className="px-8 md:px-16 max-w-xl">
-                <p className="text-white/80 text-sm uppercase tracking-widest mb-2">For Employers</p>
-                <h2 className="font-serif text-2xl md:text-4xl font-bold text-white mb-4">Build a Workforce That Delivers Results</h2>
-                <p className="text-white/90 text-lg hidden md:block">Our structured recruitment process ensures faster hiring, reduced attrition and access to dependable talent.</p>
+            <div className="absolute inset-0 bg-black/20 flex items-center">
+              <div className="px-6 md:px-14 max-w-xl">
+                <p className="inline-block text-white/90 text-xs md:text-sm uppercase tracking-widest mb-3 font-semibold bg-trustNavy/90 px-3.5 py-1.5 rounded-md backdrop-blur-sm border border-white/10 shadow-sm">
+                  For Employers
+                </p>
+                <div className="bg-trustNavy/90 backdrop-blur-md p-5 md:p-6 rounded-xl border border-white/15 shadow-xl text-white">
+                  <h2 className="font-serif text-2xl md:text-4xl font-bold mb-3 leading-tight">
+                    Build a Workforce That Delivers Results
+                  </h2>
+                  <p className="text-white/90 text-sm md:text-base leading-relaxed">
+                    Our structured recruitment process ensures faster hiring, reduced attrition and access to dependable talent.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

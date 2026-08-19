@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Mail, Phone, MapPin, MessageCircle, Clock, Send } from 'lucide-react';
 import { PageHeader, Button } from '@/components/ui';
 import { FadeIn } from '@/components/motion';
@@ -162,70 +161,6 @@ export default function ContactPage() {
               </div>
             </FadeIn>
           </div>
-        </div>
-      </section>
-
-      {/* Map Section Placeholder */}
-      <section className="bg-gradient-to-br from-trustLightGrey via-white to-trustLightGrey">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24">
-          <FadeIn>
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-trustNavy mb-6">
-                Visit Our Office
-              </h2>
-              <p className="text-trustGrey text-lg mb-8">
-                We welcome you to visit our office for in-person consultations. 
-                Please schedule an appointment in advance to ensure our team can give you their full attention.
-              </p>
-            </div>
-          </FadeIn>
-          
-          {/* Office Images Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <FadeIn delay={0.1}>
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Modern office space"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            </FadeIn>
-            <FadeIn delay={0.2}>
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src="https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Office meeting room"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            </FadeIn>
-            <FadeIn delay={0.3}>
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Office reception area"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            </FadeIn>
-          </div>
-
-          <FadeIn delay={0.4}>
-            <div className="bg-gradient-to-br from-trustNavy via-trustBlue to-trustTeal rounded-lg aspect-[16/9] md:aspect-[21/9] flex items-center justify-center shadow-lg">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin size={40} className="text-white" />
-                </div>
-                <p className="text-white text-lg">
-                  {CONTACT_INFO.address}
-                </p>
-              </div>
-            </div>
-          </FadeIn>
         </div>
       </section>
 

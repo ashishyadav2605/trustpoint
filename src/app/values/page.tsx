@@ -23,7 +23,7 @@ export default function ValuesPage() {
             <FadeIn delay={0.1}>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Team collaboration"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -33,7 +33,7 @@ export default function ValuesPage() {
             <FadeIn delay={0.2}>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1573497019236-17f8177b81e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Professional handshake"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -43,7 +43,7 @@ export default function ValuesPage() {
             <FadeIn delay={0.3}>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Business meeting"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -100,7 +100,7 @@ export default function ValuesPage() {
             <FadeIn delay={0.1}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Team working together"
                   fill
                   className="object-cover"
